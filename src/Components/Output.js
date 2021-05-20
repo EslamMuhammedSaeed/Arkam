@@ -9,9 +9,9 @@ class Output extends React.Component {
 
         return (
          <div>
-            <div class="card text-dark">
+            <div class="card text-dark mr-4">
                 <div class="card-header pt-1 pb-0">
-                    <h4 class="card-title">{this.props.event}</h4>
+                    <h4 class="card-title">current: {this.props.event}</h4>
                 </div>
                 <div class="card-body pt-1 pb-1">
                     <p class="card-text mb-1">type : {this.props.type}</p>

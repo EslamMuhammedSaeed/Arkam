@@ -2,8 +2,6 @@
 import './App.css';
 
 import React from 'react';
-import PassOutput from './Components/Output';
-import ShootOutput from './Components/ShootOutput';
 import TypeInput from './Components/TypeInput';
 import HeightInput from './Components/HeightInput';
 import BodyPartInput from './Components/BodyPartInput';
@@ -177,22 +175,7 @@ class App extends React.Component {
       document.addEventListener("keypress",this.shortcutHandler);
     }
     render() {
-      
-        if(this.state.eventButton=="shoot"){
-          var output =  <ShootOutput type={this.state.type} 
-                                  extras={this.state.extras} 
-                                  bodyPart={this.state.bodyPart} >   
-                        </ShootOutput>;
-        }
-        else if(this.state.eventButton=="pass"){
-          var output =  <PassOutput type={this.state.type} 
-                              height={this.state.height} 
-                              extras={this.state.extras} 
-                              bodyPart={this.state.bodyPart} >   
-                        </PassOutput>;
-        }
-
-        return (
+            return (
          
           <div className="container-fluid px-0" >
           <div className="text-center py-4 bg-white shadow-sm container-fluid">
