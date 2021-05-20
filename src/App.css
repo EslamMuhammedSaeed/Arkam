@@ -1,3 +1,6 @@
+body{
+  background-color: #f3f3f3;
+}
 .App {
   text-align: center;
 }
@@ -34,5 +37,51 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.bg-orange{
+  background-color: rgb(250, 84, 33);
+}
+.bg-events{
+  background-color: rgb(22, 21, 21);
+}
+.events-container{
+  /* border-radius: 0 8px 8px 0; */
+  /* border-right : 5px solid rgb(250, 84, 33); */
+  min-height : 198px;
+  padding-top: 10px ;
+  background-color: #f3f3f3;
+  
+}
+.btn-dark{
+  height: 40px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+
+/* select.form-control[multiple], select.form-control[size] {
+  height: 27px !important;
+
+  padding: 0 !important;
+}
+
+option{
+  padding-right: 3px;
+  padding-top: 5px !important;
+  display: inline !important;
+  border: 2px solid orange;
+  
+} */
+@media screen and (max-width: 675px) {
+  .events-container{
+    /* border-radius: 0 8px 8px 0; */
+    border-right : 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 50;
+    
   }
 }
